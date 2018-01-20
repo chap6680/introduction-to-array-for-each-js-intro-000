@@ -8,9 +8,9 @@ function logItemsToConsole(item, index) {
 
 function iterate(callback) {
   var array = [1, 2, 3, 5, 8, 13];
-  
+
   array.forEach(callback);
-  
+
   return array;
 }
 
