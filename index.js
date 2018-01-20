@@ -1,31 +1,13 @@
-var array = ["dog", "cat", "squirrel"];
-
-// function iterativeLog(arr) {
-//   arr.forEach((el, i) => {
-//     console.log(`${i}: ${el}`)
-//   })
-// }
-// iterativeLog(array);
-
-function iterativeLog(el,i,arr) {
-  arr[i] = el +"!!!";
+function iterativeLog(array){
+  array.forEach(item =>{
+    console.log(`${array.indexOf(item)}: ${item}`)
+  })
 }
-
-function iterate(callback) {
-  var cats = ["Garfield", "Bianca", "Petunia"]
-
-  cats.forEach(callback)
-
-  return cats
+function iterate(callback){
+  var newarray = [6,1,4]
+  newarray.forEach(callback)
+  return newarray
 }
-
-iterate(iterativeLog);     //for iterativeLog(el,i,arr)
-
-function doToArray(arr, callback) {
-  arr.forEach(callback);
+function doToArray(array,callback){
+  array.forEach(callback)
 }
-
-//doToArray(array, ()=> { array.forEach((el, i) => { console.log(`${i}: ${el}`) }) })                 // for iterativeLog(arr)
-
-doToArray(array,iterativeLog);     //for iterativeLog(el,i,arr)
-console.log(array);                //for iterativeLog(el,i,arr)
