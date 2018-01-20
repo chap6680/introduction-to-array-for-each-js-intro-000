@@ -25,7 +25,7 @@ function doToArray(arr, callback) {
   arr.forEach(callback);
 }
 
-//doToArray(array, ()=> { array.forEach((el, i) => { console.log(`${i}: ${el}`) }) })                 // for iterativeLog(arr) 
+//doToArray(array, ()=> { array.forEach((el, i) => { console.log(`${i}: ${el}`) }) })                 // for iterativeLog(arr)
 
 doToArray(array,iterativeLog);     //for iterativeLog(el,i,arr)
 console.log(array);                //for iterativeLog(el,i,arr)
